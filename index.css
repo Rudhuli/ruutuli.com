@@ -1,0 +1,50 @@
+/* UTILITIES */
+
+:root {
+    --white: #ffffff;
+    --grey: #ededed;
+    --pink: #f29991;
+    --dark-grey: #404040;
+    --black: #000000;
+
+  }
+
+  * {
+      margin: 0;
+      padding:0;
+      box-sizing: border-box;
+  }
+
+ 
+
+  header{
+    display: flex;    
+    background-size: cover;
+    justify-content: center;
+    height: 500px;  
+  }
+
+  .header { 
+      text-align: center;
+      align-content: center;
+      justify-content: center;
+      display: block;
+      margin: auto; 
+      color: var(--white);
+      font-size: 4vmin;
+  }
+
+  body {
+    background-color: var(--dark-grey);
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+  }
+
+  
+
+h1 {
+    font-family: Consolas;
+    color:var(--grey);
+}
+
