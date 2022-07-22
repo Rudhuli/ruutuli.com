@@ -1,12 +1,18 @@
-/* UTILITIES */
+@import "/WebkitFont/stylesheet.css";
+
+/* UTILITIES---------------------------------------------------- */
 
 :root {
     --white: #ffffff;
-    --grey: #ededed;
-    --pink: #f29991;
+    --off-white: #e5ddd8;
     --dark-grey: #404040;
     --black: #000000;
-
+    --Dark-Color-1: #3e4c4e;
+    --Dark-Color-2: #015c63;
+    --Dark-Color-3: #017075;
+    --Pink-Color-1: #f48d79;
+    --Pink-Color-2: #fda898;
+    --Pink-Color-3: #ffc0b4;
   }
 
   * {
@@ -15,36 +21,148 @@
       box-sizing: border-box;
   }
 
- 
-
   header{
-    display: flex;    
-    background-size: cover;
-    justify-content: center;
-    height: 500px;  
+    display: block;
   }
 
-  .header { 
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  .content { 
+      text-shadow: 3px 3px 10px black;
+      animation: fadeIn 3s;
       text-align: center;
       align-content: center;
       justify-content: center;
       display: block;
       margin: auto; 
-      color: var(--white);
-      font-size: 4vmin;
+      color: var(--Pink-Color-1);
+      font-size: 7vmin;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      
   }
 
   body {
-    background-color: var(--dark-grey);
+    background-color: var(--Dark-Color-1);
     justify-content: center;
     align-content: center;
     margin: auto;
   }
 
-  
 
 h1 {
-    font-family: Consolas;
+    font-family: 'dk_display_patrolregular';
     color:var(--grey);
+}
+
+li {
+  list-style: none;
+}
+
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  height: 259px; 
+  background-image: url('/images/bottomborder.png');
+}
+
+.footer {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+ /* BUTTONS ----------------------------------------------------*/
+
+ .contentButtons{
+  display: flex;
+ }
+
+ .buttonsContainer{
+padding: .5em;
+ }
+
+.buttonText {
+  color: white;
+  font-size: .5em;
+  font-family: 'dk_display_patrolregular';
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  from { transform: translate(0,  0px); }
+  65%  { transform: translate(0, 15px); }
+  to   { transform: translate(0, -0px); }    
+}
+
+input[type=image] {
+  margin-bottom: -30px;
+  -webkit-filter: drop-shadow(5px 5px 10px #222);
+  filter: drop-shadow(5px 5px 10px #222);
+  
+}
+
+input[type=image]:hover {
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}
+
+ /* NAVBAR STYLING ----------------------------------------------------*/
+
+
+ .navbar {
+  display:flex;
+  align-items: center;
+  justify-content: right;
+  padding: 10px;
+  background-color: var(--Pink-Color-1);
+  color: var(--black);
+  position: relative;
+  z-index: 10;
+  box-shadow: 0px 8px 20px rgba(0,0,0, 0.2);
+}
+
+.nav-links a {
+  text-decoration: none;
+  color:var(--off-white);
+}
+
+.menu {
+  display: flex;
+  gap: 2em;
+  font-size: 2em;
+  font-family: 'dk_display_patrolregular';
+}
+
+
+.menu li a:hover {
+color: var(--Dark-Color-3)!important;
+}
+
+.menu li {
+  padding: 5px 14px;
 }
 
