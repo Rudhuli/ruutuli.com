@@ -1,0 +1,80 @@
+
+:root {
+  --white: #ffffff;
+  --dark-grey: #404040;
+  --black: #000000;
+  --background-color: #455657;
+  --header-color: #f38c79;
+  --accent-color1: #e5ddd8;
+  --accent-color2: #ff7459;
+  --accent-color3: #144c44;
+}
+
+[data-theme="light"] {
+  --background-color: #e5ddd8;
+
+}
+
+h2 {
+  color: var(--header-color);
+  font-size: 2.3em;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+  padding-bottom: 25px;
+}
+.container {
+  align-items: center;
+  border-radius: 50px;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  width: 800px;
+  min-height: 350px;
+  max-height: 350px;
+  background-color: var(--accent-color1);
+  text-shadow: none;
+
+} 
+
+p {
+   padding: 25px;
+   line-height: 1.6;
+   font-size: 1.1em;
+}
+
+
+button {
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  border-radius: 25px;
+  padding: 1em;
+  margin-top: 2em;
+  display: inline-block;     
+  position: relative;    
+  z-index: 1;   
+}
+
+button:hover {
+  background-color: var(--accent-color2);
+  color: var(--white);
+}
+
+span {
+  color: var(--accent-color2);
+  font-weight: bold;
+}
+
+.colorResult,
+.colorResult1,
+.colorResult2 {
+  border: 1px black solid;
+  color: black;
+  border-radius: 10px;
+  padding: 0px 10px 0px 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+  text-transform: uppercase;
+}

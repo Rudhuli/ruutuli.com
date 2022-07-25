@@ -54,10 +54,13 @@
   
   .menu li a:hover {
   color: var(--accent-color3)!important;
+  list-style: none;
   }
   
   .menu li {
     padding: 5px 14px;
+    color: var(--accent-color1);
+    list-style: none;
   }
 
   li {
@@ -95,7 +98,14 @@ h6 {
 
 a {
     text-decoration: none;
-    color: var(--accent-color1);
+  }
+
+  a:visited {
+    color: var(--accent-color3);
+  }
+
+  a:hover {
+    color: var(--accent-color2);
   }
 
   .content { 
@@ -117,6 +127,26 @@ a {
   .content-buttons {
     border: none;
   }
+  
+.divBox {
+  padding: 2em;
+  align-items: center;
+  border-radius: 50px;
+  justify-content: center;
+  text-align: left;
+  min-height: 300px;
+  max-height: 300px;
+  background-color: var(--accent-color1);
+  text-shadow: none;
+  color: var(--black)!important;
+}
+
+ul {
+  margin-left: 10px;
+  list-style-type: "✦ ";
+  display: list-item;
+  color: var(--black)!important;
+}
   
 
   @keyframes fadeIn {
