@@ -86,40 +86,39 @@ const generate = () => {
 
   const trope = options.trope[Math.floor(Math.random() * options.trope.length)];
 
-  document.querySelector(".formResult").innerHTML = form;
-  document.querySelector(".weaponResult").innerHTML = weapon;
-  document.querySelector(".elementResult").innerHTML = element;
-  document.querySelector(".animalResult").innerHTML = animal;
-  document.querySelector(".specialBodyPartResult").innerHTML = specialBodyPart;
-  document.querySelector(".occupationResult").innerHTML = occupation;
-  document.querySelector(".locationResult").innerHTML = location;
-  document.querySelector(".miscResult").innerHTML = misc;
-  document.querySelector(".posPersonalityResult").innerHTML = posPersonality;
-    document.querySelector(".posPersonalityResult2").innerHTML = posPersonality2;
-  document.querySelector(".nuePersonalityResult").innerHTML = nuePersonality;
-    document.querySelector(".nuePersonalityResult2").innerHTML = nuePersonality2;
-  document.querySelector(".negPersonalityResult").innerHTML = negPersonality;
-    document.querySelector(".negPersonalityResult2").innerHTML = negPersonality2;
-  document.querySelector(".tropeResult").innerHTML = trope;
+  document.querySelectorAll(".formResult").forEach(el => el.innerHTML = form);
+  document.querySelectorAll(".weaponResult").forEach(el => el.innerHTML = weapon);
+  document.querySelectorAll(".elementResult").forEach(el => el.innerHTML = element);
+  document.querySelectorAll(".animalResult").forEach(el => el.innerHTML = animal);
+  document.querySelectorAll(".specialBodyPartResult").forEach(el => el.innerHTML = specialBodyPart);
+  document.querySelectorAll(".occupationResult").forEach(el => el.innerHTML = occupation);
+  document.querySelectorAll(".locationResult").forEach(el => el.innerHTML = location);
+  document.querySelectorAll(".miscResult").forEach(el => el.innerHTML = misc);
+  document.querySelectorAll(".posPersonalityResult").forEach(el => el.innerHTML = posPersonality);
+  document.querySelectorAll(".posPersonalityResult2").forEach(el => el.innerHTML = posPersonality2);
+  document.querySelectorAll(".nuePersonalityResult").forEach(el => el.innerHTML = nuePersonality);
+  document.querySelectorAll(".nuePersonalityResult2").forEach(el => el.innerHTML = nuePersonality2);
+  document.querySelectorAll(".negPersonalityResult").forEach(el => el.innerHTML = negPersonality);
+  document.querySelectorAll(".negPersonalityResult2").forEach(el => el.innerHTML = negPersonality2);
+  document.querySelectorAll(".tropeResult").forEach(el => el.innerHTML = trope);
   
 
-  document.querySelector(".colorResult").style.backgroundColor =
-    "#" + randomColor;
-  document.querySelector(".colorResult").innerHTML = "#" + randomColor;
-  document.querySelector(".colorResult1").style.backgroundColor =
-    "#" + randomColor1;
-  document.querySelector(".colorResult1").innerHTML = "#" + randomColor1;
-  document.querySelector(".colorResult2").style.backgroundColor =
-    "#" + randomColor2;
-  document.querySelector(".colorResult2").innerHTML = "#" + randomColor2;
+  document.querySelectorAll(".colorResult").forEach(el => el.style.backgroundColor = "#" + randomColor);
+  document.querySelectorAll(".colorResult").forEach(el => el.innerHTML = "#" + randomColor);
+
+  document.querySelectorAll(".colorResult1").forEach(el => el.style.backgroundColor = "#" + randomColor1);
+  document.querySelectorAll(".colorResult1").forEach(el => el.innerHTML = "#" + randomColor1);
+
+  document.querySelectorAll(".colorResult2").forEach(el => el.style.backgroundColor = "#" + randomColor2);
+  document.querySelectorAll(".colorResult2").forEach(el => el.innerHTML = "#" + randomColor2);
 
 
-  document.querySelector(".likesResult").innerHTML = likes;
-  document.querySelector(".likesResult2").innerHTML = likes2;
-  document.querySelector(".likesResult3").innerHTML = likes3;
-  document.querySelector(".likesResult4").innerHTML = likes4;
-  document.querySelector(".likesResult5").innerHTML = likes5;
-  document.querySelector(".likesResult6").innerHTML = likes6;
+  document.querySelectorAll(".likesResult").forEach(el => el.innerHTML = likes);
+  document.querySelectorAll(".likesResult2").forEach(el => el.innerHTML = likes2);
+  document.querySelectorAll(".likesResult3").forEach(el => el.innerHTML = likes3);
+  document.querySelectorAll(".likesResult4").forEach(el => el.innerHTML = likes4);
+  document.querySelectorAll(".likesResult5").forEach(el => el.innerHTML = likes5);
+  document.querySelectorAll(".likesResult6").forEach(el => el.innerHTML = likes6);
 };
 
 document.querySelector("button").addEventListener("click", generate);

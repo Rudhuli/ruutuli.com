@@ -4,64 +4,183 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta-name="viewport" content="width-device-width, initial-scale-1">
-        <link rel="stylesheet" href="index.css">
-        <title>Ruutuli</title>
+        <link rel="stylesheet" href="/index.css">
+        <link rel="stylesheet" href="/Pages/randomCharacterGenerator.css">
+        <link rel="shortcut icon" href="/images/maki2.ico" /> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;400&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/262000d25d.js" crossorigin="anonymous"></script>
+        <title>Ruutuli | Character Generator</title>
     </head>
     <body>
+        
         <header>
             <nav class="navbar">
                 <ul class="nav-links">
-                <!-- NAVIGATION MENUS -->
                 <div class="menu">
-                    <div class="theme-switch-wrapper">
-                        <label class="theme-switch" for="checkbox">
-                     <input type="checkbox" id="checkbox" />
-                     <div class="slider round"></div>
-                   </label>
-                     <em>Enable Light Mode(wip)!</em>
-                   </div>
                     <li><a href="/">HOME</a></li>
                     <li><a href="/Pages/comingsoon.html">ABOUT</a></li>
+                    <li><a href="/Pages/projects.html">PROJECTS</a></li>
                     <li><a href="/Pages/comingsoon.html">CONTACT</a></li>
                     </div>     
                 </ul>
            </nav>                
         </header>
-        
-
         <div class="content">
-            <h1>RUUTULI</h1>
-            <h6 style="font-family:dk_display_patrolregular;font-size:.5em"> I'm a(n) . . .</h6>
-       
-            <div id="contentButtons">
+            <div class="content-main">
+                <h6>Ruu's Random Character Generator</h6>
+            </div> 
+        </div> 
 
-            <div class="buttonsContainer">
-                <a href="/Pages/comingsoon.html"><input type="image" src="/images/maki2.png"  height="180" width="180"/>
-                <div class="buttonText"> Artist</div></a>
-            </div>
-            <div class="buttonsContainer">
-                <a href="/Pages/comingsoon.html"><input type="image" src="/images/maki2.png"  height="180" width="180"/>
-                <div class="buttonText"> Cosplayer</div></a>
-            </div>
-            <div class="buttonsContainer">
-                <a href="/Pages/comingsoon.html"><input type="image" src="/images/maki2.png"  height="180" width="180"/>
-                <div class="buttonText"> Vtuber</div></a>
-            </div>
-            <div class="buttonsContainer">
-                <a href="/Pages/comingsoon.html"><input type="image" src="/images/maki2.png"  height="180" width="180"/>
-                <div class="buttonText"> Streamer</div></a>
-            </div>
-    
+            <div class="contentAlt">
+                <div class="container"> 
+                    <div class="headContainer">Description Mode<i class="fa-regular fa-copy"></i></div>
+                    <div class="childContainer">
+                        <p>A(n) <span class="formResult"><b></b></span> with a(n) <span class="tropeResult"><b></b></span> trope, that weilds a(n) <span class="weaponResult"><b></b></span>.
+                            They have an affinity with the element <span class="elementResult"><b></b></span> and have a connection to the creatures known as <span class="animalResult"><b></b></span>(S).
+                            There seems to be something special about their <span class="specialBodyPartResult"><b></b></span>(S). They have an affiliation with <span class="miscResult"><b></b></span>(S).
+                            Their color scheme consists of <span class="randomColorResult"><b><span class="colorResult"></span></b></span>, <span class="randomColorResult1"><b><span class="colorResult1"></span></b></span>, and <span class="randomColorResult2"><b><span class="colorResult2"></span></b></span>.
+                            They work as a(n) <span class="occupationResult"><b></b></span> and can often be found in a(n) <span class="locationResult"><b></b></span>.
+                            They are ➕<span class="posPersonalityResult"><b></b></span> and ➕<span class="posPersonalityResult2"><b></b></span>.
+                            They can be known to be =<span class="nuePersonalityResult"><b></b></span> and =<span class="nuePersonalityResult2"><b></b></span>.
+                            However be aware they also have issues with being ➖<span class="negPersonalityResult"><b></b></span> and ➖<span class="negPersonalityResult2"><b></b></span>.
+                            They like <span class="likesResult"><b></b></span> , <span class="likesResult2"><b></b></span> and <span class="likesResult3"><b></b></span>.
+                            They dislike <span class="likesResult4"><b></b></span> , <span class="likesResult5"><b></b></span> and <span class="likesResult6"><b></b></span>.</p></p>
+                    </div>
+                </div>
+                <div class="container"> 
+                    <div class="headContainer">List Mode<i class="fa-regular fa-copy"></i></div>
+                    <div class="childContainer">
 
+                        <table style="width:100%">
+                            <tr>
+                              <td><i class="fa-solid fa-arrows-rotate"></i>RACE</td>
+                              <td><span class="formResult"></span></td>
+                            </tr>
+                            <tr>
+                              <td><i class="fa-solid fa-arrows-rotate"></i>WEAPON</td>
+                              <td><span class="weaponResult"></span></td>
+                            </tr>
+                            <tr>
+                              <td><i class="fa-solid fa-arrows-rotate"></i>ELEMENT</td>
+                              <td><span class="elementResult"></span></td>
+                            </tr>
+                            <tr>
+                              <td><i class="fa-solid fa-arrows-rotate"></i>ANIMAL</td>
+                              <td><span class="animalResult"></span></td>
+                            </tr>
+                            <tr>
+                              <td><i class="fa-solid fa-arrows-rotate"></i>SPECIAL BODY PART</td>
+                              <td><span class="specialBodyPartResult"></span></td>
+                            </tr>
+                            <tr>
+                              <td><i class="fa-solid fa-arrows-rotate"></i>COLOR 1</td>
+                              <td><span class="colorResult"></span></td>
+                            </tr>
+                            <tr>
+                              <td><i class="fa-solid fa-arrows-rotate"></i>COLOR 2</td>
+                              <td><span class="colorResult1"></span></td>
+                            </tr>
+                            <tr>
+                              <td><i class="fa-solid fa-arrows-rotate"></i>COLOR 3</td>
+                              <td><span class="colorResult2"></span></td>
+                            </tr>
+                            <tr>
+                              <td><i class="fa-solid fa-arrows-rotate"></i>OCCUPATION</td>
+                              <td><span class="occupationResult"></span></td>
+                            </tr>
+                            <tr>
+                              <td><i class="fa-solid fa-arrows-rotate"></i>LOCATION</td>
+                              <td><span class="locationResult"></span></td>
+                            </tr>
+                            <tr>
+                              <td><i class="fa-solid fa-arrows-rotate"></i>MISC</td>
+                              <td><span class="miscResult"></span></td>
+                            </tr>
+                            <tr>
+                              <td><i class="fa-solid fa-arrows-rotate"></i>POS PERSONALITY</td>
+                              <td><span class="posPersonalityResult"></span></td>
+                            </tr>
+                            <tr>
+                              <td><i class="fa-solid fa-arrows-rotate"></i>POS PERSONALITY</td>
+                              <td><span class="posPersonalityResult2"></span></td>
+                            </tr>
+                            <tr>
+                              <td><i class="fa-solid fa-arrows-rotate"></i>NUE PERSONALITY</td>
+                              <td><span class="nuePersonalityResult"></span></td>
+                            </tr>
+                            <tr>
+                              <td><i class="fa-solid fa-arrows-rotate"></i>NUE PERSONALITY</td>
+                              <td><span class="nuePersonalityResult2"></span></td>
+                            </tr>
+                            <tr>
+                              <td><i class="fa-solid fa-arrows-rotate"></i>NEG PERSONALITY</td>
+                              <td><span class="negPersonalityResult"></span></td>
+                            </tr>
+                            <tr>
+                              <td><i class="fa-solid fa-arrows-rotate"></i>NEG PERSONALITY</td>
+                              <td><span class="negPersonalityResult2"></span></td>
+                            </tr>
+                            <tr>
+                              <td><i class="fa-solid fa-arrows-rotate"></i>TROPE</td>
+                              <td><span class="tropeResult"><b></b></span></td>
+                            </tr>
+                            <tr>
+                              <td><i class="fa-solid fa-arrows-rotate"></i>LIKES</td>
+                              <td><span class="likesResult"></span></td>
+                            </tr>
+                            <tr>
+                              <td><i class="fa-solid fa-arrows-rotate"></i>LIKES</td>
+                              <td><span class="likesResult2"></span></td>
+                            </tr>
+                            <tr>
+                              <td><i class="fa-solid fa-arrows-rotate"></i>LIKES</td>
+                              <td><span class="likesResult3"></span></td>
+                            </tr>
+                            <tr>
+                              <td><i class="fa-solid fa-arrows-rotate"></i>DISLIKES</td>
+                              <td><span class="likesResult4"></span></td>
+                            </tr>
+                            <tr>
+                              <td><i class="fa-solid fa-arrows-rotate"></i>DISLIKES</td>
+                              <td><span class="likesResult5"></span></td>
+                            </tr>
+                            <tr>
+                              <td><i class="fa-solid fa-arrows-rotate"></i>DISLIKES</td>
+                              <td><span class="likesResult6"></span></td>
+                            </tr>
+                          </table>
+
+                        
+
+
+                    </div>
+              
+                </div>
+          
+         </div> 
+         <div class="content">
+            <button> 🎲 Click To Generate 🎲</button>
+           </div>
+      
 
         </div>
-        </div>
-    </div>
-         
-            <!-- <div class="footer">
-                <p>© 2022 Ruutuli</p>
-              </div> -->
-
+    <footer>
+        <div class="footer">
+            <span id="footer">
+                <a href="https://twitter.com/Ruutuli" target="_blank"><i class="fa-brands fa-twitter"></i></a>             
+                <a href="https://www.instagram.com/ruutuli" target="_blank"><i class="fa-brands fa-instagram"></i></a>  
+                <a href="https://www.twitch.tv/ruutuli" target="_blank"><i class="fa-brands fa-twitch"></i></a>  
+                <a href="https://jointhrone.com/u/ruutuli" target="_blank"><i class="fa-solid fa-crown"></i></a>  
+                <a href="https://discord.gg/qhBueSe9SA" target="_blank"><i class="fa-brands fa-discord"></i></a>  
+            </span>
+            <p>© 2022 Ruutuli</p>
+          </div>
+          <script type="module" src="/Pages/options.js"></script>
+          <script type="module" src="/Pages/randomCharacterGenerator.js"></script>
         <script src="index.js"></script>
-    </body>
+    </footer>
+</body>
 </html>
